@@ -1,4 +1,14 @@
-html {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Log In Page</title>
+  <link rel="icon" type="image/png" href="https://d2cy1obokpvee9.cloudfront.net/manifest/favicon-196x196.png" sizes="196x196" class="next-head">
+  
+  <style>
+      html {
     box-sizing: border-box;
   }
   
@@ -13,19 +23,22 @@ html {
   }
 
   input[type=text], select {
-    width: 100%;
+    width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
+    
     display: inline-block;
+    align-items: center;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
   }
 
   input[type=password], select {
-    width: 100%;
+    width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
+    align-self:center;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -76,3 +89,24 @@ html {
     background-color: #073525;
     border: 1px solid #073525;
   }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Log In</h1>
+  </header>
+  <form action="/auth/signin" method="POST">
+  <center>  <input type="text" id="email"  name="email" placeholder="Your Email Id" value="parth123@gmail.com"></center><br>
+
+   <center> <input type="password" id="password" name="password" placeholder="Your Password" value="parth123"></center>
+    
+   <div class="buttons">
+    <button class="trigger-push" type="submit">Log In</button>
+  </div>
+  </form>
+
+  
+
+ 
+</body>
+</html>
